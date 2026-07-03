@@ -1,0 +1,623 @@
+// LECCE
+MERGE (l1:Luogo {nome:"Cattedrale Barocca", tipologia:"Chiesa", comune:"Lecce"})
+MERGE (l2:Luogo {nome:"Museo Archeologico", tipologia:"Museo", comune:"Lecce"})
+MERGE (l3:Luogo {nome:"Anfiteatro Romano", tipologia:"Parco archeologico", comune:"Lecce"})
+MERGE (l4:Luogo {nome:"Piazza del Duomo", tipologia:"Piazza", comune:"Lecce"})
+MERGE (l5:Luogo {nome:"Porta Napoli", tipologia:"Porta", comune:"Lecce"})
+MERGE (l6:Luogo {nome:"Basilica di Santa Croce", tipologia:"Chiesa", comune:"Lecce"})
+MERGE (l7:Luogo {nome:"Castello Carlo V", tipologia:"Castello", comune:"Lecce"})
+MERGE (l8:Luogo {nome:"Teatro Romano", tipologia:"Teatro", comune:"Lecce"})
+
+// ROMA
+MERGE (l9:Luogo {nome:"Colosseo", tipologia:"Monumento", comune:"Roma"})
+MERGE (l10:Luogo {nome:"Fori Imperiali", tipologia:"Parco archeologico", comune:"Roma"})
+MERGE (l11:Luogo {nome:"Pantheon", tipologia:"Monumento", comune:"Roma"})
+MERGE (l12:Luogo {nome:"Fontana di Trevi", tipologia:"Monumento", comune:"Roma"})
+MERGE (l13:Luogo {nome:"Piazza Navona", tipologia:"Piazza", comune:"Roma"})
+MERGE (l14:Luogo {nome:"Castel Sant'Angelo", tipologia:"Castello", comune:"Roma"})
+MERGE (l15:Luogo {nome:"Altare della Patria", tipologia:"Monumento", comune:"Roma"})
+MERGE (l16:Luogo {nome:"Terme di Caracalla", tipologia:"Monumento", comune:"Roma"})
+
+// FIRENZE
+MERGE (l17:Luogo {nome:"Uffizi", tipologia:"Museo", comune:"Firenze"})
+MERGE (l18:Luogo {nome:"Duomo Firenze", tipologia:"Chiesa", comune:"Firenze"})
+MERGE (l19:Luogo {nome:"Piazza della Signoria", tipologia:"Piazza", comune:"Firenze"})
+MERGE (l20:Luogo {nome:"Ponte Vecchio", tipologia:"Ponte", comune:"Firenze"})
+MERGE (l21:Luogo {nome:"Palazzo Vecchio", tipologia:"Palazzo", comune:"Firenze"})
+MERGE (l22:Luogo {nome:"Santa Croce", tipologia:"Chiesa", comune:"Firenze"})
+MERGE (l23:Luogo {nome:"Giardino Boboli", tipologia:"Giardino", comune:"Firenze"})
+MERGE (l24:Luogo {nome:"Museo Bargello", tipologia:"Museo", comune:"Firenze"})
+
+// VENEZIA
+MERGE (l25:Luogo {nome:"Palazzo Ducale", tipologia:"Monumento", comune:"Venezia"})
+MERGE (l26:Luogo {nome:"Basilica dei Frari", tipologia:"Chiesa", comune:"Venezia"})
+MERGE (l27:Luogo {nome:"Piazza San Marco", tipologia:"Piazza", comune:"Venezia"})
+MERGE (l28:Luogo {nome:"Ponte di Rialto", tipologia:"Ponte", comune:"Venezia"})
+MERGE (l29:Luogo {nome:"Teatro La Fenice", tipologia:"Teatro", comune:"Venezia"})
+MERGE (l30:Luogo {nome:"Ca d Oro", tipologia:"Palazzo", comune:"Venezia"})
+MERGE (l31:Luogo {nome:"Arsenale", tipologia:"Complesso", comune:"Venezia"})
+MERGE (l32:Luogo {nome:"Basilica San Marco", tipologia:"Chiesa", comune:"Venezia"})
+
+// NAPOLI
+MERGE (l33:Luogo {nome:"Cappella Sansevero", tipologia:"Museo", comune:"Napoli"})
+MERGE (l34:Luogo {nome:"Santa Chiara", tipologia:"Chiesa", comune:"Napoli"})
+MERGE (l35:Luogo {nome:"Piazza del Plebiscito", tipologia:"Piazza", comune:"Napoli"})
+MERGE (l36:Luogo {nome:"Maschio Angioino", tipologia:"Castello", comune:"Napoli"})
+MERGE (l37:Luogo {nome:"Castel dell Ovo", tipologia:"Castello", comune:"Napoli"})
+MERGE (l38:Luogo {nome:"Teatro San Carlo", tipologia:"Teatro", comune:"Napoli"})
+MERGE (l39:Luogo {nome:"Museo Capodimonte", tipologia:"Museo", comune:"Napoli"})
+MERGE (l40:Luogo {nome:"Duomo Napoli", tipologia:"Chiesa", comune:"Napoli"})
+
+// TORINO
+MERGE (l41:Luogo {nome:"Palazzo Reale", tipologia:"Palazzo", comune:"Torino"})
+MERGE (l42:Luogo {nome:"Museo Egizio", tipologia:"Museo", comune:"Torino"})
+MERGE (l43:Luogo {nome:"Mole Antonelliana", tipologia:"Monumento", comune:"Torino"})
+MERGE (l44:Luogo {nome:"Piazza Castello", tipologia:"Piazza", comune:"Torino"})
+MERGE (l45:Luogo {nome:"Basilica di Superga", tipologia:"Chiesa", comune:"Torino"})
+MERGE (l46:Luogo {nome:"Palazzo Madama", tipologia:"Palazzo", comune:"Torino"})
+MERGE (l47:Luogo {nome:"Parco Valentino", tipologia:"Parco", comune:"Torino"})
+MERGE (l48:Luogo {nome:"Duomo Torino", tipologia:"Chiesa", comune:"Torino"})
+
+// AGRIGENTO
+MERGE (l49:Luogo {nome:"Valle dei Templi", tipologia:"Parco archeologico", comune:"Agrigento"})
+MERGE (l50:Luogo {nome:"Tempio Concordia", tipologia:"Tempio", comune:"Agrigento"})
+MERGE (l51:Luogo {nome:"Tempio Giunone", tipologia:"Tempio", comune:"Agrigento"})
+MERGE (l52:Luogo {nome:"Museo Archeologico", tipologia:"Museo", comune:"Agrigento"})
+MERGE (l53:Luogo {nome:"Kolymbethra", tipologia:"Giardino", comune:"Agrigento"})
+MERGE (l54:Luogo {nome:"Tempio Eracle", tipologia:"Tempio", comune:"Agrigento"})
+MERGE (l55:Luogo {nome:"Santuario Rupestre", tipologia:"Santuario", comune:"Agrigento"})
+MERGE (l56:Luogo {nome:"Tempio Zeus", tipologia:"Tempio", comune:"Agrigento"});
+
+// LECCE (4)
+MERGE (i1:Itinerario {nome:"Lecce Barocca", tema:"Barocco"})
+MERGE (i2:Itinerario {nome:"Lecce Archeologica", tema:"Archeologia"})
+MERGE (i3:Itinerario {nome:"Lecce tra Porte e Castelli", tema:"Storia"})
+MERGE (i4:Itinerario {nome:"Arte e Musei di Lecce", tema:"Arte"})
+
+// ROMA (5)
+MERGE (i5:Itinerario {nome:"Roma Antica", tema:"Archeologia"})
+MERGE (i6:Itinerario {nome:"Roma Barocca", tema:"Barocco"})
+MERGE (i7:Itinerario {nome:"Roma Rinascimentale", tema:"Rinascimento"})
+MERGE (i8:Itinerario {nome:"Roma Monumentale", tema:"Storia"})
+MERGE (i9:Itinerario {nome:"Fontane e Piazze di Roma", tema:"Piazze"})
+
+// FIRENZE (4)
+MERGE (i10:Itinerario {nome:"Rinascimento Fiorentino", tema:"Rinascimento"})
+MERGE (i11:Itinerario {nome:"Firenze Sacra", tema:"Religioso"})
+MERGE (i12:Itinerario {nome:"Firenze dei Musei", tema:"Arte"})
+MERGE (i13:Itinerario {nome:"Giardini e Ponti di Firenze", tema:"Natura"})
+
+// VENEZIA (4)
+MERGE (i14:Itinerario {nome:"Laguna Veneziana", tema:"Gotico"})
+MERGE (i15:Itinerario {nome:"Venezia dei Canali", tema:"Ponti e Canali"})
+MERGE (i16:Itinerario {nome:"Venezia Sacra", tema:"Religioso"})
+MERGE (i17:Itinerario {nome:"Arte e Spettacolo Veneziano", tema:"Cultura"})
+
+// NAPOLI (4)
+MERGE (i18:Itinerario {nome:"Napoli Storica", tema:"Barocco"})
+MERGE (i19:Itinerario {nome:"Napoli Reale", tema:"Storia"})
+MERGE (i20:Itinerario {nome:"Castelli di Napoli", tema:"Fortificazioni"})
+MERGE (i21:Itinerario {nome:"Arte e Musica Napoletana", tema:"Cultura"})
+
+// TORINO (3)
+MERGE (i22:Itinerario {nome:"Torino Reale", tema:"Storia Sabauda"})
+MERGE (i23:Itinerario {nome:"Torino Sacra", tema:"Religioso"})
+MERGE (i24:Itinerario {nome:"Torino Verde", tema:"Natura"})
+
+// AGRIGENTO (3)
+MERGE (i25:Itinerario {nome:"Sicilia Archeologica", tema:"Archeologia"})
+MERGE (i26:Itinerario {nome:"Templi e Giardini", tema:"Natura"})
+MERGE (i27:Itinerario {nome:"Agrigento Sacra", tema:"Religioso"});
+
+// creazione eventi
+// LECCE (4)
+MERGE (e1:Evento {titolo:"Festival Barocco", data:"2026-07-10", categoria:"Festival"})
+MERGE (e2:Evento {titolo:"Notte dei Musei", data:"2026-05-18", categoria:"Museo"})
+MERGE (e3:Evento {titolo:"Rievocazione Romana", data:"2026-09-20", categoria:"Storia"})
+MERGE (e4:Evento {titolo:"Concerto in Piazza del Duomo", data:"2026-08-15", categoria:"Musica"})
+
+// ROMA (5)
+MERGE (e5:Evento {titolo:"Notte Romana", data:"2026-08-10", categoria:"Teatro"})
+MERGE (e6:Evento {titolo:"Mostra Archeologica ai Fori", data:"2026-04-12", categoria:"Mostra"})
+MERGE (e7:Evento {titolo:"Fontana Illuminata", data:"2026-06-05", categoria:"Evento"})
+MERGE (e8:Evento {titolo:"Capodanno a Roma", data:"2026-12-31", categoria:"Musica"})
+MERGE (e9:Evento {titolo:"Visite Guidate al Pantheon", data:"2026-10-02", categoria:"Visita"})
+
+// NAPOLI (4)
+MERGE (e18:Evento {titolo:"Concerto di Capodanno a Napoli", data:"2026-12-31", categoria:"Musica"})
+MERGE (e19:Evento {titolo:"Stagione Lirica al San Carlo", data:"2026-10-15", categoria:"Teatro"})
+MERGE (e20:Evento {titolo:"Mostra a Capodimonte", data:"2026-04-20", categoria:"Mostra"})
+MERGE (e21:Evento {titolo:"Festa a Piazza Plebiscito", data:"2026-08-01", categoria:"Festival"})
+
+// TORINO (3)
+MERGE (e22:Evento {titolo:"Torino Reale Live", data:"2026-11-05", categoria:"Visita"})
+MERGE (e23:Evento {titolo:"Notte al Museo Egizio", data:"2026-05-25", categoria:"Museo"})
+MERGE (e24:Evento {titolo:"Salone del Libro", data:"2026-05-14", categoria:"Festival"})
+
+// AGRIGENTO (3)
+MERGE (e25:Evento {titolo:"Archeologia Siciliana", data:"2026-07-25", categoria:"Mostra"})
+MERGE (e26:Evento {titolo:"Sagra del Mandorlo in Fiore", data:"2026-02-01", categoria:"Festival"});
+
+//INCLUSO_IN
+MATCH
+(l1:Luogo {nome:"Cattedrale Barocca"}), (l2:Luogo {nome:"Museo Archeologico"}), (l3:Luogo {nome:"Anfiteatro Romano"}), (l4:Luogo {nome:"Piazza del Duomo"}),
+(l5:Luogo {nome:"Porta Napoli"}), (l6:Luogo {nome:"Basilica di Santa Croce"}), (l7:Luogo {nome:"Castello Carlo V"}), (l8:Luogo {nome:"Teatro Romano"}),
+
+(l9:Luogo {nome:"Colosseo"}), (l10:Luogo {nome:"Fori Imperiali"}), (l11:Luogo {nome:"Pantheon"}), (l12:Luogo {nome:"Fontana di Trevi"}),
+(l13:Luogo {nome:"Piazza Navona"}), (l14:Luogo {nome:"Castel Sant'Angelo"}), (l15:Luogo {nome:"Altare della Patria"}), (l16:Luogo {nome:"Terme di Caracalla"}),
+
+(l17:Luogo {nome:"Uffizi"}), (l18:Luogo {nome:"Duomo Firenze"}), (l19:Luogo {nome:"Piazza della Signoria"}), (l20:Luogo {nome:"Ponte Vecchio"}),
+(l21:Luogo {nome:"Palazzo Vecchio"}), (l22:Luogo {nome:"Santa Croce"}), (l23:Luogo {nome:"Giardino Boboli"}), (l24:Luogo {nome:"Museo Bargello"}),
+
+(l25:Luogo {nome:"Palazzo Ducale"}), (l26:Luogo {nome:"Basilica dei Frari"}), (l27:Luogo {nome:"Piazza San Marco"}), (l28:Luogo {nome:"Ponte di Rialto"}),
+(l29:Luogo {nome:"Teatro La Fenice"}), (l30:Luogo {nome:"Ca d Oro"}), (l31:Luogo {nome:"Arsenale"}), (l32:Luogo {nome:"Basilica San Marco"}),
+
+(l33:Luogo {nome:"Cappella Sansevero"}), (l34:Luogo {nome:"Santa Chiara"}), (l35:Luogo {nome:"Piazza del Plebiscito"}), (l36:Luogo {nome:"Maschio Angioino"}),
+(l37:Luogo {nome:"Castel dell Ovo"}), (l38:Luogo {nome:"Teatro San Carlo"}), (l39:Luogo {nome:"Museo Capodimonte"}), (l40:Luogo {nome:"Duomo Napoli"}),
+
+(l41:Luogo {nome:"Palazzo Reale"}), (l42:Luogo {nome:"Museo Egizio"}), (l43:Luogo {nome:"Mole Antonelliana"}), (l44:Luogo {nome:"Piazza Castello"}),
+(l45:Luogo {nome:"Basilica di Superga"}), (l46:Luogo {nome:"Palazzo Madama"}), (l47:Luogo {nome:"Parco Valentino"}), (l48:Luogo {nome:"Duomo Torino"}),
+
+(l49:Luogo {nome:"Valle dei Templi"}), (l50:Luogo {nome:"Tempio Concordia"}), (l51:Luogo {nome:"Tempio Giunone"}), (l52:Luogo {nome:"Museo Archeologico"}),
+(l53:Luogo {nome:"Kolymbethra"}), (l54:Luogo {nome:"Tempio Eracle"}), (l55:Luogo {nome:"Santuario Rupestre"}), (l56:Luogo {nome:"Tempio Zeus"}),
+
+(i1:Itinerario {nome:"Lecce Barocca"}), (i2:Itinerario {nome:"Lecce Archeologica"}), (i3:Itinerario {nome:"Lecce tra Porte e Castelli"}), (i4:Itinerario {nome:"Arte e Musei di Lecce"}),
+(i5:Itinerario {nome:"Roma Antica"}), (i6:Itinerario {nome:"Roma Barocca"}), (i7:Itinerario {nome:"Roma Rinascimentale"}), (i8:Itinerario {nome:"Roma Monumentale"}),
+(i9:Itinerario {nome:"Fontane e Piazze di Roma"}),
+
+(i10:Itinerario {nome:"Rinascimento Fiorentino"}), (i11:Itinerario {nome:"Firenze Sacra"}), (i12:Itinerario {nome:"Firenze dei Musei"}), (i13:Itinerario {nome:"Giardini e Ponti di Firenze"}),
+
+(i14:Itinerario {nome:"Laguna Veneziana"}), (i15:Itinerario {nome:"Venezia dei Canali"}), (i16:Itinerario {nome:"Venezia Sacra"}), (i17:Itinerario {nome:"Arte e Spettacolo Veneziano"}),
+
+(i18:Itinerario {nome:"Napoli Storica"}), (i19:Itinerario {nome:"Napoli Reale"}), (i20:Itinerario {nome:"Castelli di Napoli"}), (i21:Itinerario {nome:"Arte e Musica Napoletana"}),
+
+(i22:Itinerario {nome:"Torino Reale"}), (i23:Itinerario {nome:"Torino Sacra"}), (i24:Itinerario {nome:"Torino Verde"}),
+
+(i25:Itinerario {nome:"Sicilia Archeologica"}), (i26:Itinerario {nome:"Templi e Giardini"}), (i27:Itinerario {nome:"Agrigento Sacra"})
+
+MERGE (l1)-[:INCLUSO_IN]->(i1)
+MERGE (l4)-[:INCLUSO_IN]->(i1)
+MERGE (l6)-[:INCLUSO_IN]->(i1)
+MERGE (l7)-[:INCLUSO_IN]->(i1)
+
+MERGE (l3)-[:INCLUSO_IN]->(i2)
+MERGE (l8)-[:INCLUSO_IN]->(i2)
+MERGE (l2)-[:INCLUSO_IN]->(i2)
+
+MERGE (l5)-[:INCLUSO_IN]->(i3)
+MERGE (l7)-[:INCLUSO_IN]->(i3)
+MERGE (l4)-[:INCLUSO_IN]->(i3)
+
+MERGE (l2)-[:INCLUSO_IN]->(i4)
+MERGE (l1)-[:INCLUSO_IN]->(i4)
+MERGE (l6)-[:INCLUSO_IN]->(i4)
+
+MERGE (l9)-[:INCLUSO_IN]->(i5)
+MERGE (l10)-[:INCLUSO_IN]->(i5)
+MERGE (l16)-[:INCLUSO_IN]->(i5)
+
+MERGE (l12)-[:INCLUSO_IN]->(i6)
+MERGE (l13)-[:INCLUSO_IN]->(i6)
+MERGE (l11)-[:INCLUSO_IN]->(i6)
+
+MERGE (l14)-[:INCLUSO_IN]->(i7)
+MERGE (l11)-[:INCLUSO_IN]->(i7)
+
+MERGE (l15)-[:INCLUSO_IN]->(i8)
+MERGE (l9)-[:INCLUSO_IN]->(i8)
+MERGE (l14)-[:INCLUSO_IN]->(i8)
+
+MERGE (l12)-[:INCLUSO_IN]->(i9)
+MERGE (l13)-[:INCLUSO_IN]->(i9)
+MERGE (l15)-[:INCLUSO_IN]->(i9)
+
+MERGE (l17)-[:INCLUSO_IN]->(i10)
+MERGE (l18)-[:INCLUSO_IN]->(i10)
+MERGE (l19)-[:INCLUSO_IN]->(i10)
+MERGE (l21)-[:INCLUSO_IN]->(i10)
+
+MERGE (l18)-[:INCLUSO_IN]->(i11)
+MERGE (l22)-[:INCLUSO_IN]->(i11)
+
+MERGE (l17)-[:INCLUSO_IN]->(i12)
+MERGE (l24)-[:INCLUSO_IN]->(i12)
+
+MERGE (l23)-[:INCLUSO_IN]->(i13)
+MERGE (l20)-[:INCLUSO_IN]->(i13)
+
+MERGE (l25)-[:INCLUSO_IN]->(i14)
+MERGE (l27)-[:INCLUSO_IN]->(i14)
+MERGE (l32)-[:INCLUSO_IN]->(i14)
+
+MERGE (l28)-[:INCLUSO_IN]->(i15)
+MERGE (l30)-[:INCLUSO_IN]->(i15)
+
+MERGE (l26)-[:INCLUSO_IN]->(i16)
+MERGE (l32)-[:INCLUSO_IN]->(i16)
+
+MERGE (l29)-[:INCLUSO_IN]->(i17)
+MERGE (l31)-[:INCLUSO_IN]->(i17)
+
+MERGE (l33)-[:INCLUSO_IN]->(i18)
+MERGE (l34)-[:INCLUSO_IN]->(i18)
+MERGE (l40)-[:INCLUSO_IN]->(i18)
+
+MERGE (l35)-[:INCLUSO_IN]->(i19)
+MERGE (l36)-[:INCLUSO_IN]->(i19)
+
+MERGE (l36)-[:INCLUSO_IN]->(i20)
+MERGE (l37)-[:INCLUSO_IN]->(i20)
+
+MERGE (l38)-[:INCLUSO_IN]->(i21)
+MERGE (l39)-[:INCLUSO_IN]->(i21)
+
+MERGE (l41)-[:INCLUSO_IN]->(i22)
+MERGE (l42)-[:INCLUSO_IN]->(i22)
+MERGE (l44)-[:INCLUSO_IN]->(i22)
+MERGE (l46)-[:INCLUSO_IN]->(i22)
+
+MERGE (l45)-[:INCLUSO_IN]->(i23)
+MERGE (l48)-[:INCLUSO_IN]->(i23)
+
+MERGE (l47)-[:INCLUSO_IN]->(i24)
+MERGE (l43)-[:INCLUSO_IN]->(i24)
+
+MERGE (l49)-[:INCLUSO_IN]->(i25)
+MERGE (l50)-[:INCLUSO_IN]->(i25)
+MERGE (l51)-[:INCLUSO_IN]->(i25)
+MERGE (l56)-[:INCLUSO_IN]->(i25)
+
+MERGE (l53)-[:INCLUSO_IN]->(i26)
+MERGE (l54)-[:INCLUSO_IN]->(i26)
+
+MERGE (l55)-[:INCLUSO_IN]->(i27)
+MERGE (l52)-[:INCLUSO_IN]->(i27);
+
+//SI SVOLGE IN
+
+MATCH
+(e1:Evento {titolo:"Festival Barocco"}), (e2:Evento {titolo:"Notte dei Musei"}), (e3:Evento {titolo:"Rievocazione Romana"}), (e4:Evento {titolo:"Concerto in Piazza del Duomo"}),
+
+(e5:Evento {titolo:"Notte Romana"}), (e6:Evento {titolo:"Mostra Archeologica ai Fori"}), (e7:Evento {titolo:"Fontana Illuminata"}), (e8:Evento {titolo:"Capodanno a Roma"}), (e9:Evento {titolo:"Visite Guidate al Pantheon"}),
+
+(e10:Evento {titolo:"Arte Rinascimentale"}), (e11:Evento {titolo:"Concerto in Piazza della Signoria"}), (e12:Evento {titolo:"Festa di Santa Croce"}), (e13:Evento {titolo:"Notte al Giardino di Boboli"}),
+
+(e14:Evento {titolo:"Biennale Laguna"}), (e15:Evento {titolo:"Regata Storica"}), (e16:Evento {titolo:"Concerto alla Fenice"}), (e17:Evento {titolo:"Festa della Sensa"}),
+
+(e18:Evento {titolo:"Concerto di Capodanno a Napoli"}), (e19:Evento {titolo:"Stagione Lirica al San Carlo"}), (e20:Evento {titolo:"Mostra a Capodimonte"}), (e21:Evento {titolo:"Festa a Piazza Plebiscito"}),
+
+(e22:Evento {titolo:"Torino Reale Live"}), (e23:Evento {titolo:"Notte al Museo Egizio"}), (e24:Evento {titolo:"Salone del Libro"}),
+
+(e25:Evento {titolo:"Archeologia Siciliana"}), (e26:Evento {titolo:"Sagra del Mandorlo in Fiore"}), (e27:Evento {titolo:"Notte dei Templi"}),
+
+(l1:Luogo {nome:"Cattedrale Barocca"}), (l2:Luogo {nome:"Museo Archeologico"}), (l3:Luogo {nome:"Anfiteatro Romano"}), (l4:Luogo {nome:"Piazza del Duomo"}),
+
+(l9:Luogo {nome:"Colosseo"}), (l10:Luogo {nome:"Fori Imperiali"}), (l11:Luogo {nome:"Pantheon"}), (l12:Luogo {nome:"Fontana di Trevi"}), (l15:Luogo {nome:"Altare della Patria"}),
+
+(l17:Luogo {nome:"Uffizi"}), (l19:Luogo {nome:"Piazza della Signoria"}), (l22:Luogo {nome:"Santa Croce"}), (l23:Luogo {nome:"Giardino Boboli"}),
+
+(l25:Luogo {nome:"Palazzo Ducale"}), (l27:Luogo {nome:"Piazza San Marco"}), (l28:Luogo {nome:"Ponte di Rialto"}), (l29:Luogo {nome:"Teatro La Fenice"}),
+
+(l33:Luogo {nome:"Cappella Sansevero"}), (l35:Luogo {nome:"Piazza del Plebiscito"}), (l38:Luogo {nome:"Teatro San Carlo"}), (l39:Luogo {nome:"Museo Capodimonte"}),
+
+(l41:Luogo {nome:"Palazzo Reale"}), (l42:Luogo {nome:"Museo Egizio"}), (l44:Luogo {nome:"Piazza Castello"}),
+
+(l49:Luogo {nome:"Valle dei Templi"}), (l50:Luogo {nome:"Tempio Concordia"}), (l56:Luogo {nome:"Tempio Zeus"})
+
+MERGE (e1)-[:SI_SVOLGE_IN]->(l1)
+MERGE (e2)-[:SI_SVOLGE_IN]->(l2)
+MERGE (e3)-[:SI_SVOLGE_IN]->(l3)
+MERGE (e4)-[:SI_SVOLGE_IN]->(l4)
+
+MERGE (e5)-[:SI_SVOLGE_IN]->(l9)
+MERGE (e6)-[:SI_SVOLGE_IN]->(l10)
+MERGE (e7)-[:SI_SVOLGE_IN]->(l12)
+MERGE (e8)-[:SI_SVOLGE_IN]->(l15)
+MERGE (e9)-[:SI_SVOLGE_IN]->(l11)
+
+MERGE (e10)-[:SI_SVOLGE_IN]->(l17)
+MERGE (e11)-[:SI_SVOLGE_IN]->(l19)
+MERGE (e12)-[:SI_SVOLGE_IN]->(l22)
+MERGE (e13)-[:SI_SVOLGE_IN]->(l23)
+
+MERGE (e14)-[:SI_SVOLGE_IN]->(l25)
+MERGE (e15)-[:SI_SVOLGE_IN]->(l28)
+MERGE (e16)-[:SI_SVOLGE_IN]->(l29)
+MERGE (e17)-[:SI_SVOLGE_IN]->(l27)
+
+MERGE (e18)-[:SI_SVOLGE_IN]->(l33)
+MERGE (e19)-[:SI_SVOLGE_IN]->(l38)
+MERGE (e20)-[:SI_SVOLGE_IN]->(l39)
+MERGE (e21)-[:SI_SVOLGE_IN]->(l35)
+
+MERGE (e22)-[:SI_SVOLGE_IN]->(l41)
+MERGE (e23)-[:SI_SVOLGE_IN]->(l42)
+MERGE (e24)-[:SI_SVOLGE_IN]->(l44)
+
+MERGE (e25)-[:SI_SVOLGE_IN]->(l49)
+MERGE (e26)-[:SI_SVOLGE_IN]->(l50)
+MERGE (e27)-[:SI_SVOLGE_IN]->(l56);
+
+// VICINO_A
+
+MATCH
+(l1:Luogo {nome:"Cattedrale Barocca"}), (l2:Luogo {nome:"Museo Archeologico", comune:"Lecce"}),
+(l3:Luogo {nome:"Anfiteatro Romano"}), (l4:Luogo {nome:"Piazza del Duomo"}),
+(l5:Luogo {nome:"Porta Napoli"}), (l7:Luogo {nome:"Castello Carlo V"}),
+
+(l9:Luogo {nome:"Colosseo"}), (l10:Luogo {nome:"Fori Imperiali"}), (l11:Luogo {nome:"Pantheon"}),
+(l12:Luogo {nome:"Fontana di Trevi"}), (l13:Luogo {nome:"Piazza Navona"}),
+
+(l17:Luogo {nome:"Uffizi"}), (l18:Luogo {nome:"Duomo Firenze"}), (l19:Luogo {nome:"Piazza della Signoria"}),
+(l20:Luogo {nome:"Ponte Vecchio"}), (l21:Luogo {nome:"Palazzo Vecchio"}), (l24:Luogo {nome:"Museo Bargello"}),
+
+(l25:Luogo {nome:"Palazzo Ducale"}), (l26:Luogo {nome:"Basilica dei Frari"}), (l27:Luogo {nome:"Piazza San Marco"}),
+(l28:Luogo {nome:"Ponte di Rialto"}), (l29:Luogo {nome:"Teatro La Fenice"}), (l32:Luogo {nome:"Basilica San Marco"}),
+
+(l33:Luogo {nome:"Cappella Sansevero"}), (l34:Luogo {nome:"Santa Chiara"}), (l35:Luogo {nome:"Piazza del Plebiscito"}),
+(l36:Luogo {nome:"Maschio Angioino"}), (l37:Luogo {nome:"Castel dell Ovo"}), (l38:Luogo {nome:"Teatro San Carlo"}),
+
+(l41:Luogo {nome:"Palazzo Reale"}), (l42:Luogo {nome:"Museo Egizio"}), (l43:Luogo {nome:"Mole Antonelliana"}),
+(l44:Luogo {nome:"Piazza Castello"}), (l45:Luogo {nome:"Basilica di Superga"}), (l46:Luogo {nome:"Palazzo Madama"}),
+
+(l49:Luogo {nome:"Valle dei Templi"}), (l50:Luogo {nome:"Tempio Concordia"}),
+(l51:Luogo {nome:"Tempio Giunone"}), (l52:Luogo {nome:"Museo Archeologico"}),
+(l53:Luogo {nome:"Kolymbethra"}), (l54:Luogo {nome:"Tempio Eracle"})
+
+MERGE (l1)-[:VICINO_A]->(l4)
+MERGE (l2)-[:VICINO_A]->(l3)
+MERGE (l5)-[:VICINO_A]->(l7)
+
+MERGE (l9)-[:VICINO_A]->(l10)
+MERGE (l10)-[:VICINO_A]->(l11)
+MERGE (l12)-[:VICINO_A]->(l13)
+
+MERGE (l17)-[:VICINO_A]->(l18)
+MERGE (l19)-[:VICINO_A]->(l20)
+MERGE (l21)-[:VICINO_A]->(l24)
+
+MERGE (l25)-[:VICINO_A]->(l27)
+MERGE (l26)-[:VICINO_A]->(l28)
+MERGE (l29)-[:VICINO_A]->(l32)
+
+MERGE (l33)-[:VICINO_A]->(l34)
+MERGE (l35)-[:VICINO_A]->(l36)
+MERGE (l37)-[:VICINO_A]->(l38)
+
+MERGE (l41)-[:VICINO_A]->(l42)
+MERGE (l43)-[:VICINO_A]->(l44)
+MERGE (l45)-[:VICINO_A]->(l46)
+
+MERGE (l49)-[:VICINO_A]->(l50)
+MERGE (l51)-[:VICINO_A]->(l52)
+MERGE (l53)-[:VICINO_A]->(l54);
+
+//Da aggiungere
+
+MATCH
+(l1:Luogo {nome:"Cattedrale Barocca"}), (l2:Luogo {nome:"Museo Archeologico", comune:"Lecce"}),
+(l3:Luogo {nome:"Anfiteatro Romano"}), (l4:Luogo {nome:"Piazza del Duomo"}),
+(l5:Luogo {nome:"Porta Napoli"}), (l6:Luogo {nome:"Basilica di Santa Croce"}),
+(l7:Luogo {nome:"Castello Carlo V"}), (l8:Luogo {nome:"Teatro Romano"}),
+
+(l9:Luogo {nome:"Colosseo"}), (l10:Luogo {nome:"Fori Imperiali"}), (l11:Luogo {nome:"Pantheon"}),
+(l12:Luogo {nome:"Fontana di Trevi"}), (l13:Luogo {nome:"Piazza Navona"}),
+(l14:Luogo {nome:"Castel Sant'Angelo"}), (l15:Luogo {nome:"Altare della Patria"}), (l16:Luogo {nome:"Terme di Caracalla"}),
+
+(l17:Luogo {nome:"Uffizi"}), (l18:Luogo {nome:"Duomo Firenze"}), (l19:Luogo {nome:"Piazza della Signoria"}),
+(l20:Luogo {nome:"Ponte Vecchio"}), (l21:Luogo {nome:"Palazzo Vecchio"}), (l22:Luogo {nome:"Santa Croce"}),
+(l23:Luogo {nome:"Giardino Boboli"}), (l24:Luogo {nome:"Museo Bargello"}),
+
+(l25:Luogo {nome:"Palazzo Ducale"}), (l26:Luogo {nome:"Basilica dei Frari"}), (l27:Luogo {nome:"Piazza San Marco"}),
+(l28:Luogo {nome:"Ponte di Rialto"}), (l29:Luogo {nome:"Teatro La Fenice"}), (l30:Luogo {nome:"Ca d Oro"}),
+(l31:Luogo {nome:"Arsenale"}), (l32:Luogo {nome:"Basilica San Marco"}),
+
+(l33:Luogo {nome:"Cappella Sansevero"}), (l34:Luogo {nome:"Santa Chiara"}), (l35:Luogo {nome:"Piazza del Plebiscito"}),
+(l36:Luogo {nome:"Maschio Angioino"}), (l37:Luogo {nome:"Castel dell Ovo"}), (l38:Luogo {nome:"Teatro San Carlo"}),
+(l39:Luogo {nome:"Museo Capodimonte"}), (l40:Luogo {nome:"Duomo Napoli"}),
+
+(l41:Luogo {nome:"Palazzo Reale"}), (l42:Luogo {nome:"Museo Egizio"}), (l43:Luogo {nome:"Mole Antonelliana"}),
+(l44:Luogo {nome:"Piazza Castello"}), (l45:Luogo {nome:"Basilica di Superga"}), (l46:Luogo {nome:"Palazzo Madama"}),
+(l47:Luogo {nome:"Parco Valentino"}), (l48:Luogo {nome:"Duomo Torino"}),
+
+(l49:Luogo {nome:"Valle dei Templi"}), (l50:Luogo {nome:"Tempio Concordia"}), (l51:Luogo {nome:"Tempio Giunone"}),
+(l52:Luogo {nome:"Museo Archeologico", comune:"Agrigento"}), (l55:Luogo {nome:"Santuario Rupestre"}),
+(l56:Luogo {nome:"Tempio Zeus"})
+
+// --- Itinerari con 4 luoghi -> quasi-clique (3 connessioni ciascuno) ---
+MERGE (l1)-[:VICINO_A]->(l6)
+MERGE (l1)-[:VICINO_A]->(l7)
+MERGE (l4)-[:VICINO_A]->(l6)
+MERGE (l4)-[:VICINO_A]->(l7)
+MERGE (l6)-[:VICINO_A]->(l7)
+
+MERGE (l17)-[:VICINO_A]->(l19)
+MERGE (l17)-[:VICINO_A]->(l21)
+MERGE (l18)-[:VICINO_A]->(l19)
+MERGE (l18)-[:VICINO_A]->(l21)
+MERGE (l19)-[:VICINO_A]->(l21)
+
+MERGE (l41)-[:VICINO_A]->(l44)
+MERGE (l41)-[:VICINO_A]->(l46)
+MERGE (l42)-[:VICINO_A]->(l44)
+MERGE (l42)-[:VICINO_A]->(l46)
+MERGE (l44)-[:VICINO_A]->(l46)
+
+MERGE (l49)-[:VICINO_A]->(l51)
+MERGE (l49)-[:VICINO_A]->(l56)
+MERGE (l50)-[:VICINO_A]->(l51)
+MERGE (l50)-[:VICINO_A]->(l56)
+MERGE (l51)-[:VICINO_A]->(l56)
+
+// --- Itinerari con 3 luoghi -> triangolo (2 connessioni ciascuno) ---
+MERGE (l9)-[:VICINO_A]->(l16)
+MERGE (l10)-[:VICINO_A]->(l16)
+
+MERGE (l11)-[:VICINO_A]->(l12)
+MERGE (l11)-[:VICINO_A]->(l13)
+
+MERGE (l9)-[:VICINO_A]->(l14)
+MERGE (l9)-[:VICINO_A]->(l15)
+MERGE (l14)-[:VICINO_A]->(l15)
+
+MERGE (l12)-[:VICINO_A]->(l15)
+MERGE (l13)-[:VICINO_A]->(l15)
+
+MERGE (l33)-[:VICINO_A]->(l40)
+MERGE (l34)-[:VICINO_A]->(l40)
+
+MERGE (l2)-[:VICINO_A]->(l8)
+MERGE (l3)-[:VICINO_A]->(l8)
+
+MERGE (l4)-[:VICINO_A]->(l5)
+
+MERGE (l1)-[:VICINO_A]->(l2)
+MERGE (l2)-[:VICINO_A]->(l6)
+
+MERGE (l25)-[:VICINO_A]->(l32)
+MERGE (l27)-[:VICINO_A]->(l32)
+
+// --- Itinerari con 2 luoghi -> 1 sola connessione ---
+MERGE (l14)-[:VICINO_A]->(l11)
+MERGE (l18)-[:VICINO_A]->(l22)
+MERGE (l17)-[:VICINO_A]->(l24)
+MERGE (l23)-[:VICINO_A]->(l20)
+MERGE (l28)-[:VICINO_A]->(l30)
+MERGE (l26)-[:VICINO_A]->(l32)
+MERGE (l29)-[:VICINO_A]->(l31)
+MERGE (l36)-[:VICINO_A]->(l37)
+MERGE (l38)-[:VICINO_A]->(l39)
+MERGE (l45)-[:VICINO_A]->(l48)
+MERGE (l47)-[:VICINO_A]->(l43)
+MERGE (l55)-[:VICINO_A]->(l52);
+
+//SIMILE_A
+
+MATCH
+(l1:Luogo {nome:"Cattedrale Barocca"}),
+(l2:Luogo {nome:"Museo Archeologico", comune:"Lecce"}),
+(l6:Luogo {nome:"Basilica di Santa Croce"}),
+(l7:Luogo {nome:"Castello Carlo V"}),
+
+(l9:Luogo {nome:"Colosseo"}),
+(l10:Luogo {nome:"Fori Imperiali"}),
+(l14:Luogo {nome:"Castel Sant'Angelo"}),
+
+(l16:Luogo {nome:"Terme di Caracalla"}),
+
+(l17:Luogo {nome:"Uffizi"}),
+(l18:Luogo {nome:"Duomo Firenze"}),
+(l20:Luogo {nome:"Ponte Vecchio"}),
+(l21:Luogo {nome:"Palazzo Vecchio"}),
+
+(l25:Luogo {nome:"Palazzo Ducale"}),
+(l28:Luogo {nome:"Ponte di Rialto"}),
+
+(l32:Luogo {nome:"Basilica San Marco"}),
+
+(l33:Luogo {nome:"Cappella Sansevero"}),
+(l34:Luogo {nome:"Santa Chiara"}),
+(l37:Luogo {nome:"Castel dell Ovo"}),
+
+(l41:Luogo {nome:"Palazzo Reale"}),
+(l42:Luogo {nome:"Museo Egizio"}),
+
+(l49:Luogo {nome:"Valle dei Templi"}),
+(l50:Luogo {nome:"Tempio Concordia"}),
+
+(l56:Luogo {nome:"Tempio Zeus"}),
+
+(l43:Luogo {nome:"Mole Antonelliana"})   
+
+MERGE (l1)-[:SIMILE_A]->(l18)
+MERGE (l6)-[:SIMILE_A]->(l34)
+MERGE (l9)-[:SIMILE_A]->(l49)
+MERGE (l2)-[:SIMILE_A]->(l33)
+MERGE (l17)-[:SIMILE_A]->(l42)
+MERGE (l25)-[:SIMILE_A]->(l43)
+MERGE (l41)-[:SIMILE_A]->(l21)
+MERGE (l50)-[:SIMILE_A]->(l16)
+MERGE (l37)-[:SIMILE_A]->(l14)
+MERGE (l32)-[:SIMILE_A]->(l7)
+MERGE (l28)-[:SIMILE_A]->(l20)
+MERGE (l56)-[:SIMILE_A]->(l10);
+
+//Da aggoingere
+
+MATCH
+(l1:Luogo {nome:"Cattedrale Barocca"}), (l3:Luogo {nome:"Anfiteatro Romano"}),
+(l5:Luogo {nome:"Porta Napoli"}), (l2:Luogo {nome:"Museo Archeologico", comune:"Lecce"}),
+
+(l9:Luogo {nome:"Colosseo"}), (l12:Luogo {nome:"Fontana di Trevi"}),
+(l14:Luogo {nome:"Castel Sant'Angelo"}), (l15:Luogo {nome:"Altare della Patria"}),
+
+(l17:Luogo {nome:"Uffizi"}), (l22:Luogo {nome:"Santa Croce"}), (l24:Luogo {nome:"Museo Bargello"}),
+(l23:Luogo {nome:"Giardino Boboli"}),
+
+(l25:Luogo {nome:"Palazzo Ducale"}), (l26:Luogo {nome:"Basilica dei Frari"}),
+(l28:Luogo {nome:"Ponte di Rialto"}), (l29:Luogo {nome:"Teatro La Fenice"}),
+
+(l33:Luogo {nome:"Cappella Sansevero"}), (l35:Luogo {nome:"Piazza del Plebiscito"}),
+(l37:Luogo {nome:"Castel dell Ovo"}), (l38:Luogo {nome:"Teatro San Carlo"}),
+
+(l41:Luogo {nome:"Palazzo Reale"}), (l45:Luogo {nome:"Basilica di Superga"}), (l47:Luogo {nome:"Parco Valentino"}),
+
+(l49:Luogo {nome:"Valle dei Templi"}), (l53:Luogo {nome:"Kolymbethra"}), (l55:Luogo {nome:"Santuario Rupestre"})
+
+// tema = Archeologia -> Lecce Archeologica, Roma Antica, Sicilia Archeologica
+MERGE (l3)-[:SIMILE_A]->(l9)
+MERGE (l3)-[:SIMILE_A]->(l49)
+MERGE (l9)-[:SIMILE_A]->(l49)
+
+// tema = Barocco -> Lecce Barocca, Roma Barocca, Napoli Storica
+MERGE (l1)-[:SIMILE_A]->(l12)
+MERGE (l1)-[:SIMILE_A]->(l33)
+MERGE (l12)-[:SIMILE_A]->(l33)
+
+// tema = Storia -> Lecce tra Porte e Castelli, Roma Monumentale, Napoli Reale
+MERGE (l5)-[:SIMILE_A]->(l15)
+MERGE (l5)-[:SIMILE_A]->(l35)
+MERGE (l15)-[:SIMILE_A]->(l35)
+
+// tema = Arte -> Arte e Musei di Lecce, Firenze dei Musei
+MERGE (l2)-[:SIMILE_A]->(l24)
+
+// tema = Rinascimento -> Roma Rinascimentale, Rinascimento Fiorentino
+MERGE (l14)-[:SIMILE_A]->(l17)
+
+// tema = Religioso -> Firenze Sacra, Venezia Sacra, Torino Sacra, Agrigento Sacra
+MERGE (l22)-[:SIMILE_A]->(l26)
+MERGE (l26)-[:SIMILE_A]->(l45)
+MERGE (l45)-[:SIMILE_A]->(l55)
+MERGE (l55)-[:SIMILE_A]->(l22)
+
+// tema = Natura -> Giardini e Ponti di Firenze, Torino Verde, Templi e Giardini
+MERGE (l23)-[:SIMILE_A]->(l47)
+MERGE (l23)-[:SIMILE_A]->(l53)
+MERGE (l47)-[:SIMILE_A]->(l53)
+
+// tema = Cultura -> Arte e Spettacolo Veneziano, Arte e Musica Napoletana
+MERGE (l29)-[:SIMILE_A]->(l38);
+
+MATCH p=()-[]->() RETURN p;
+
+CALL db.schema.visualization;
+
+//Query 1
+
+MATCH (l:Luogo)-[:INCLUSO_IN]->(i:Itinerario) //Cerca tutti i luighi collegati a un certo itinerario
+WHERE i.tema = "Barocco" //Filtro, condizione che il tema dell itinerario sia Barocco
+RETURN l.nome AS Luogo, l.comune AS Citta, l.tipologia AS Tipo, i.nome AS NomeItinerario //Specifica cosa vogliamo vedere stampato a schermo nella tabella finale dei risultati;
+
+//Query 2
+
+MATCH (e1:Evento)-[:SI_SVOLGE_IN]->(l1:Luogo)-[:VICINO_A]-(l2:Luogo)<-[:SI_SVOLGE_IN]-(e2:Evento) //Questa si legge a partire dal centro, 
+WHERE e1 <> e2 // Gli eventi devono essere diversi, in modo tale che il percorso non ritorni al nodo di partenza
+RETURN e1.titolo AS Evento1, l1.nome AS NelLuogo, e2.titolo AS Evento2, l2.nome AS VicinoALuogo;
+
+//Query 3
+
+MATCH (l1:Luogo)-[:INCLUSO_IN]->(i:Itinerario)<-[:INCLUSO_IN]-(l2:Luogo)
+MATCH (l1)-[:VICINO_A|SIMILE_A]-(l2) //o una o l altra, i luoghi se sono legati da un legame di vicinanza e/o somiglianza
+RETURN l1.nome AS Luogo, l1.comune AS Citta, i.nome AS Itinerario, COUNT(l2) AS NumeroConnessioni //calcola le connessioni
+ORDER BY NumeroConnessioni DESC //ordina le connessioni in modo decrescente;
