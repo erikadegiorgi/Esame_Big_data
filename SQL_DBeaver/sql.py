@@ -1,7 +1,7 @@
 import sqlite3
 
 # Connect to a local SQLite database file
-conn = sqlite3.connect("cinema-sql.db")
+conn = sqlite3.connect("cinema.db")
 cursor = conn.cursor()
 
 
