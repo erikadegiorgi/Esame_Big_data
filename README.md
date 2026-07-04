@@ -40,7 +40,7 @@ Abbiamo scelto di implementare una soluzione basata su un database a grafo utili
 2) è stato verificato che i nodi e gli archi siano stati creati correttamente
 3) sono eseguite le 3 query:
 -1- trovare tutti i luoghi collegati a un certo itinerario tematico
--2- individuare eventi che si svolgono in luoghi vicini tra loro o appartenenti allo stema culturale
+-2- individuare eventi che si svolgono in luoghi vicini tra loro o appartenenti allo stesso tema culturale
 -3- individuare quali luoghi dello stesso itinerario sono maggiormente connessi al altri luoghi per vicinanza o similarità tematica 
 
 ### immagine grafo
