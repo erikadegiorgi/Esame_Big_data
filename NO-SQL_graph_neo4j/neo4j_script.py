@@ -4,7 +4,7 @@ URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "password")
 
 driver = GraphDatabase.driver(URI, auth=AUTH)
-session = driver.session(database="neo4j")
+session = driver.session(database="ente2")
 
 # --- Query 1: Luoghi inclusi in itinerari a tema Barocco ---
 result1 = session.run(
