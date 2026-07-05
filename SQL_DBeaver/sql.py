@@ -53,7 +53,7 @@ cursor.execute("""
            (COUNT(B.id_biglietto) * 100.0 / SA.capienza) AS Tasso_Occupazione_Percentuale
     FROM SPETTACOLO AS S
     JOIN SALA AS SA ON S.n_sala = SA.id_sala
-    LEFT JOIN BIGLIETTO AS B ON S.id_spettacolo = B.id_biglietto
+    LEFT JOIN BIGLIETTO AS B ON S.id_spettacolo = B.id_spettacolo
     GROUP BY S.n_sala, SA.capienza
     ORDER BY Tasso_Occupazione_Percentuale DESC
 """)
