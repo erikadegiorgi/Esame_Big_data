@@ -16,7 +16,7 @@ SELECT S.id_spettacolo, S.data_s, S.orario, F.titolo, SA.id_sala
 FROM SPETTACOLO S
 JOIN FILM F ON S.cod_film = F.id_film
 JOIN SALA SA ON S.n_sala = SA.id_sala
-WHERE S.data_s = '2026-07-0'
+WHERE S.data_s = '2026-07-01'
 ORDER BY S.orario ASC;
 
 SELECT S.id_spettacolo, S.data_s, S.orario, F.titolo, SA.id_sala
