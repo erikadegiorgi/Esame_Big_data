@@ -52,11 +52,13 @@ cursor.execute("""
     SELECT S.n_sala, SA.capienza, COUNT(B.id_biglietto) AS Biglietti_Venduti,
            (COUNT(B.id_biglietto) * 100.0 / SA.capienza) AS Tasso_Occupazione_Percentuale
     FROM SPETTACOLO AS S
-    LEFT JOIN SALA AS SA ON S.n_sala = SA.id_sala
+    JOIN SALA AS SA ON S.n_sala = SA.id_sala
     LEFT JOIN BIGLIETTO AS B ON S.id_spettacolo = B.id_biglietto
     GROUP BY S.n_sala, SA.capienza
     ORDER BY Tasso_Occupazione_Percentuale DESC
 """)
+
+
 rows3 = cursor.fetchall()
 
 print("\nTasso di occupazione per sala:")
