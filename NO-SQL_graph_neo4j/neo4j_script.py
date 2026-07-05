@@ -15,7 +15,7 @@ result1 = session.run(
     """
 )
 
-print("Query 1 - Luoghi Barocco:")
+print("Query 1 - Luoghi Barocco:(Luogo, Citta, Tipo, NomeItinerario)")
 for record in result1:
     print(record["Luogo"], record["Citta"], record["Tipo"], record["NomeItinerario"])
 
@@ -28,7 +28,7 @@ result2 = session.run(
     """
 )
 
-print("\nQuery 2 - Eventi vicini:")
+print("\nQuery 2 - Eventi vicini: (Evento1, NelLuogo, Evento2, VicinoALuogo)")
 for record in result2:
     print(record["Evento1"], record["NelLuogo"], record["Evento2"], record["VicinoALuogo"])
 
@@ -42,7 +42,7 @@ result3 = session.run(
     """
 )
 
-print("\nQuery 3 - Classifica connessioni:")
+print("\nQuery 3 - Classifica connessioni: (Luogo, Citta, Itinerario, NumeroConnessioni)")
 for record in result3:
     print(record["Luogo"], record["Citta"], record["Itinerario"], record["NumeroConnessioni"])
 
