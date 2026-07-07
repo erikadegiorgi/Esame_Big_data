@@ -38,6 +38,8 @@ ORDER BY totale_biglietti_venduti DESC;
 
 --QUERY 3 : INDIVIDUARE IL TASSO DI OCCUPAZIONE DI OGNI SALA IN BASE ALLA SUA CAPIENZA E AI BIGLIETTI VENDUTI 
 
+--tasso occupazione percentuale
+
 SELECT S.n_sala, SA.capienza, COUNT(B.id_biglietto) AS Biglietti_Venduti,
        (COUNT(B.id_biglietto) * 100.0 / SA.capienza) AS Tasso_Occupazione_Percentuale 
 FROM SPETTACOLO AS S
@@ -46,6 +48,7 @@ LEFT JOIN BIGLIETTO AS B ON S.id_spettacolo = B.id_spettacolo
 GROUP BY S.n_sala, SA.capienza
 ORDER BY Tasso_Occupazione_Percentuale DESC;
 
+-- tasso di occupazione medio 
 
 SELECT S.n_sala, SA.capienza, 
        COUNT(DISTINCT S.id_spettacolo) AS Numero_Spettacoli,

@@ -22,7 +22,7 @@ for record in result1:
 # --- Query 2: Eventi che si svolgono in luoghi vicini tra loro ---
 result2 = session.run(
     """
-    MATCH (e1:Evento)-[:SI_SVOLGE_IN]->(l1:Luogo)-[:VICINO_A]-(l2:Luogo)<-[:SI_SVOLGE_IN]-(e2:Evento)
+    MATCH (e1:Evento)-[:SI_SVOLGE_IN]->(l1:Luogo)-[:VICINO_A|SIMILE_A]-(l2:Luogo)<-[:SI_SVOLGE_IN]-(e2:Evento)
     WHERE e1 <> e2
     RETURN e1.titolo AS Evento1, l1.nome AS NelLuogo, e2.titolo AS Evento2, l2.nome AS VicinoALuogo
     """
