@@ -19,18 +19,20 @@ print("Query 1 - Luoghi Barocco:(Luogo, Citta, Tipo, NomeItinerario)")
 for record in result1:
     print(record["Luogo"], record["Citta"], record["Tipo"], record["NomeItinerario"])
 
-# --- Query 2: Eventi che si svolgono in luoghi vicini tra loro ---
+# --- Query 2: Eventi che si svolgono in luoghi vicini tra loro o con lo stesso tema culturale---
 result2 = session.run(
     """
-    MATCH (e1:Evento)-[:SI_SVOLGE_IN]->(l1:Luogo)-[:VICINO_A|SIMILE_A]-(l2:Luogo)<-[:SI_SVOLGE_IN]-(e2:Evento)
-    WHERE e1 <> e2
-    RETURN e1.titolo AS Evento1, l1.nome AS NelLuogo, e2.titolo AS Evento2, l2.nome AS VicinoALuogo
+    MATCH (e1:Evento)-[:SI_SVOLGE_IN]->(l1:Luogo)-[:INCLUSO_IN]->(i1:Itinerario)
+MATCH (e2:Evento)-[:SI_SVOLGE_IN]->(l2:Luogo)-[:INCLUSO_IN]->(i2:Itinerario)
+WHERE e1 <> e2 AND ((l1)-[:VICINO_A]-(l2) OR i1.tema = i2.tema)
+RETURN DISTINCT  e1.titolo AS Evento_1, i1.tema AS Tema_1, l1.nome AS Luogo_1, e2.titolo AS Evento_2, i2.tema AS Tema_2, l2.nome AS Luogo_2
     """
 )
 
-print("\nQuery 2 - Eventi vicini: (Evento1, NelLuogo, Evento2, VicinoALuogo)")
+print("\nQuery 2 - Eventi vicini per luogo o tema: (Evento_1, Tema_1, Luogo_1, Evento_2, Tema_2, Luogo_2)")
 for record in result2:
-    print(record["Evento1"], record["NelLuogo"], record["Evento2"], record["VicinoALuogo"])
+    print(record["Evento_1"], record["Tema_1"], record["Luogo_1"], 
+          record["Evento_2"], record["Tema_2"], record["Luogo_2"])
 
 # --- Query 3: Classifica luoghi per numero di connessioni ---
 result3 = session.run(
