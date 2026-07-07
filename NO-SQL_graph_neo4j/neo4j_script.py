@@ -29,7 +29,7 @@ RETURN DISTINCT  e1.titolo AS Evento_1, i1.tema AS Tema_1, l1.nome AS Luogo_1, e
     """
 )
 
-print("\nQuery 2 - Eventi vicini per luogo o tema: (Evento_1, Tema_1, Luogo_1, Evento_2, Tema_2, Luogo_2)")
+print("\nQuery 2 - Eventi vicini per luogo o con lo stesso tema culturale: (Evento_1, Tema_1, Luogo_1, Evento_2, Tema_2, Luogo_2)")
 for record in result2:
     print(record["Evento_1"], record["Tema_1"], record["Luogo_1"], 
           record["Evento_2"], record["Tema_2"], record["Luogo_2"])
