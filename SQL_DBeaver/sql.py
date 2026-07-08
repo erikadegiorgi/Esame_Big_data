@@ -58,7 +58,6 @@ cursor.execute("""
     ORDER BY Tasso_Occupazione_Percentuale DESC
 """)
 
-
 rows3 = cursor.fetchall()
 
 print("\nTasso di occupazione percentuale per sala:")
